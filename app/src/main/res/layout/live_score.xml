@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/match_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of the day of Jun "
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:background="@drawable/bck_date"/>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:layout_marginTop="2dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/full_Time"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time "
+            android:textSize="15sp"
+            android:textColor="#f00"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+
+            />
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:src="@drawable/egypt"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/team_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" MUN"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:text=" - "
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/team_away"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MC"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+
+            />
+        <ImageView
+            android:id="@+id/img_away"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:src="@drawable/southafrica"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    tools:ignore="HardcodedText">
+    <group android:checkableBehavior="single"
+        android:id="@+id/gr_menu">
+        <item
+
+            android:icon="@drawable/news"
+            android:id="@+id/news"
+            android:title="الاخبار "
+            />
+        <item
+            android:icon="@drawable/stadium"
+            android:id="@+id/matches"
+            android:title="المباريات"
+            />
+
+        <item
+            android:icon="@drawable/competition"
+            android:id="@+id/competition"
+            android:title="المنافسات" />
+        <item
+            android:icon="@drawable/fav"
+            android:id="@+id/fav"
+            android:title="المفضل"/>
+
+
+    </group>
+
+
+    <item android:title=""  >
+        <menu  android:checkableBehavior="single">
+
+            <item
+                android:icon="@drawable/contrasts"
+                android:id="@+id/night_mode"
+                android:title="الوضع الليلي"
+                android:actionLayout="@layout/layout_switch"/>
+            <item
+                android:icon="@drawable/settings"
+                android:id="@+id/settings"
+                android:title="الاعدادات"
+                />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/backgroundcolor"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fifa_nav"
+            android:layout_width="350dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#c9def2"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:id="@+id/img_botola"
+                android:src="@drawable/caf"/>
+            <TextView
+                android:id="@+id/txt_botola_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text=" Caf National Africa "
+                android:textColor="?attr/textcolor"
+                android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/inner_lin"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/cardbackgroundcolor"
+        >
+        <TextView
+            android:id="@+id/full_Time"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time "
+            android:textSize="15sp"
+            android:textColor="#f00"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+
+            />
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:src="@drawable/egypt"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/team_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" MUN"
+            android:textSize="12sp"
+            android:textColor="?attr/textcolor"
+            android:layout_marginTop="5dp"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:text=" - "
+                android:textSize="20sp"
+                android:textColor="?attr/textcolor"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/team_away"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MC"
+            android:textSize="12sp"
+            android:textColor="?attr/textcolor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+
+            />
+        <ImageView
+            android:id="@+id/img_away"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:src="@drawable/southafrica"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

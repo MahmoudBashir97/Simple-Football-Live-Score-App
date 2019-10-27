@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.detail_Competition"
+    android:background="#022866">
+    <include
+        android:id="@+id/title"
+        layout="@layout/app_bar_2"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.TabLayout
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:id="@+id/tablay"
+            app:tabTextColor="#fff"
+            app:tabIndicatorColor="#fff"
+            app:tabSelectedTextColor="#fff"
+            android:background="@drawable/bck_frgment"
+            android:layout_centerHorizontal="true"/>
+        <android.support.v4.view.ViewPager
+            android:layout_below="@+id/tablay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewpage"
+            />
+    </RelativeLayout>
+</LinearLayout>

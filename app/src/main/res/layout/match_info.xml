@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#061538">
+
+    <LinearLayout
+        android:id="@+id/l_n"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/panorama"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3"
+        >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/bornmouth"
+            android:layout_marginLeft="5dp"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/date_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:id="@+id/result_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/tot"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/l_n">
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:id="@+id/tablay"
+            app:tabTextColor="#fff"
+            app:tabIndicatorColor="#fff"
+            app:tabSelectedTextColor="#fff"
+            android:background="#022866"
+            android:layout_centerHorizontal="true"/>
+        <android.support.v4.view.ViewPager
+            android:layout_below="@+id/tablay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewpage"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
